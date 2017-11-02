@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "manufacturer": "BMW",
+        "model":"i3",
+        "top_speed": 150,
+        "acceleration": 8,
+        "charging_time": "4h"
+    },
+    {
+        "id":2,
+        "manufacturer": "Tesla",
+        "model":"Model S",
+        "top_speed": 249,
+        "acceleration": 5.5,
+        "charging_time": "8h"
+    }
+]

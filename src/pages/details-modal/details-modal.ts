@@ -6,14 +6,10 @@ import { NavController, NavParams, ViewController } from 'ionic-angular';
   templateUrl: 'details-modal.html',
 })
 export class DetailsModalPage {
-
-  manfacturer = "";
+  details;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
-  }
-
-  ionViewDidLoad() {
-    this.manfacturer = this.navParams.get('userId');
+    this.details = this.navParams.get('carDetails');
   }
 
   dismiss() {

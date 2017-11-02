@@ -6,30 +6,15 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page3">
-  <ion-list id="ponuda-list2">
-    <ion-item color="none" id="ponuda-list-item6" (click) ="presentDetailsModal()">
+  <ion-list>
+    <ion-item *ngFor="let car of cars" (click)="presentDetailsModal(car.id)">
       <ion-thumbnail item-left>
         <img />
       </ion-thumbnail>
       <h2>
-        Rimac
+        {{car.manufacturer }}
       </h2>
-    </ion-item>
-    <ion-item color="none" id="ponuda-list-item14">
-      <ion-thumbnail item-left>
-        <img />
-      </ion-thumbnail>
-      <h2>
-        BMW
-      </h2>
-    </ion-item>
-    <ion-item color="none" id="ponuda-list-item15">
-      <ion-thumbnail item-left>
-        <img />
-      </ion-thumbnail>
-      <h2>
-        Tesla
-      </h2>
+      <p>{{ car.model }}</p>
     </ion-item>
   </ion-list>
 </ion-content>

@@ -6,7 +6,27 @@
         <ion-icon name="close"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>{{manfacturer}}</ion-title>
+    <ion-title>{{details.manufacturer}}</ion-title>
   </ion-toolbar>
+  <ion-item>
+    <ion-icon name='car' item-start></ion-icon>
+    Model
+    <p item-end>{{details.model}}</p>
+  </ion-item>
+  <ion-item>
+      <ion-icon name='speedometer' item-start></ion-icon>
+      Maks. brzina
+      <p item-end>{{ details.top_speed }} km/h</p>
+  </ion-item>
+  <ion-item>
+      <ion-icon name='fastforward' item-start></ion-icon>
+      Ubraznje
+      <p item-end> {{ details.acceleration }} s</p>
+  </ion-item>
+  <ion-item>
+      <ion-icon name='battery-charging' item-start></ion-icon>
+      Punjenje baterije
+      <p item-end>{{ details.charging_time }}</p>
+  </ion-item>
 
 </ion-content>
